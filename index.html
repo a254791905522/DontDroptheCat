@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Don't Drop the Cat</title>
+  <style>
+    :root {
+      --pink-1: #ffd3df;
+      --pink-2: #f89bb6;
+      --pink-3: #ffe9f0;
+      --berry: #7d3158;
+      --text: #5a3d4d;
+      --card: rgba(255, 255, 255, 0.82);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, var(--pink-1), #f7a2bd 52%, #ffdce6);
+    }
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      align-items: center;
+    }
+    .hero-copy h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2.2rem, 5vw, 4.5rem);
+      line-height: 0.95;
+      color: var(--berry);
+    }
+    .hero-copy p {
+      margin: 0 0 18px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.72);
+      font-weight: 700;
+      color: var(--berry);
+    }
+    .hero-art, .card {
+      background: var(--card);
+      border-radius: 28px;
+      box-shadow: 0 18px 40px rgba(138, 58, 89, 0.12);
+      padding: 18px;
+    }
+    .hero-art img, .gallery img {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+    }
+    .section {
+      margin-top: 28px;
+    }
+    .section h2 {
+      margin: 0 0 14px;
+      color: var(--berry);
+      font-size: 1.8rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--berry);
+    }
+    .card p, .card li {
+      line-height: 1.65;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    footer {
+      margin-top: 34px;
+      font-size: 0.95rem;
+      text-align: center;
+      color: #7d5a69;
+    }
+    footer a {
+      color: #7d3158;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 860px) {
+      .hero, .grid, .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Don't Drop the Cat</h1>
+        <p>A soft and colorful puzzle game where every swipe moves the whole board. Merge matching cats, avoid dangerous pits, and solve 50 relaxing logic challenges designed for quick sessions on iPhone and iPad.</p>
+        <div class="pill-row">
+          <div class="pill">Offline Play</div>
+          <div class="pill">50 Levels</div>
+          <div class="pill">One-Finger Controls</div>
+          <div class="pill">Cute Cozy Style</div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="./Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-04-21%20at%2016.37.37.png" alt="Main menu screenshot">
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why Players Like It</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Simple to Learn</h3>
+          <p>Swipe in any direction and every cat slides together. The controls are immediate and friendly even for casual players.</p>
+        </article>
+        <article class="card">
+          <h3>Thoughtful Puzzles</h3>
+          <p>Color pits, tight layouts, and matching rules turn each board into a compact logic problem instead of a random swipe game.</p>
+        </article>
+        <article class="card">
+          <h3>Relaxing Mood</h3>
+          <p>Soft colors, cute cat art, and gentle audio feedback keep the game calm while the puzzle difficulty gradually increases.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Gameplay Highlights</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Match the Right Cats</h3>
+          <p>Bring identical cats together with carefully planned swipes. One wrong route can block the board or send a cat into danger.</p>
+        </article>
+        <article class="card">
+          <h3>Avoid Wrong Pits</h3>
+          <p>Colored pits create risk. You need to read the whole board, not just the next move.</p>
+        </article>
+        <article class="card">
+          <h3>Play Anywhere</h3>
+          <p>No internet, no login, and no account setup. Progress is saved locally so the game is always ready for a quick session.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Screenshots</h2>
+      <div class="gallery">
+        <img src="./Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-04-21%20at%2016.37.44.png" alt="Gameplay screenshot 1">
+        <img src="./Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-04-21%20at%2016.37.49%202.png" alt="Gameplay screenshot 2">
+      </div>
+    </section>
+
+    <footer>
+      <a href="./privacy.html">Privacy Policy</a>
+    </footer>
+  </main>
+</body>
+</html>
